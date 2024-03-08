@@ -6,11 +6,13 @@
 // Assinatura das funções
 void telaMain(void);
 void telaSobre(void);
+void telaDev(void);
 
 // Programa Principal
 int main(void) {
     telaMain();
     telaSobre();
+    telaDev();
 }
 
 // Funções
@@ -61,6 +63,30 @@ void telaSobre(void) {
     printf("||   discutidos em sala de aula. O programa também tem propósito avaliativo, ||\n");
     printf("||   sendo uma ferramenta para avaliar o desempenho da desenvolvedora e      ||\n");
     printf("||   a sua compreensão do assunto.                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+}
+
+void telaDev(void) {
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                Universidade Federal do Rio Grande do Norte                ||\n");
+    printf("||                    Centro de Ensino Superior do Seridó                    ||\n");
+    printf("||                 Departamento de Computação e Tecnologia                   ||\n");
+    printf("||                     Disciplina DCT1106 -- Programação                     ||\n");
+    printf("||           Sistema de Gestão para Atendimento de Saúde a Domicílio         ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                 = = = = Sobre a Desenvolvedora = = = =                    ||\n");
+    printf("||                                                                           ||\n");
+    printf("||            Discente: Isa Laura D. Araújo                                  ||\n");
+    printf("||            E-mail: isalaura1304@gmail.com                                 ||\n");
+    printf("||            Instagram: @ehaisau                                            ||\n");
+    printf("||            Git: https://github.com/ehaisa/SIG-HEALTH.git                  ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
