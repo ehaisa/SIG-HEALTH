@@ -2,6 +2,7 @@
 // GORGÔNIO, disponível em @FlaviusGorgonio https://github.com/FlaviusGorgonio/LinguaSolta.git
 
 #include <stdio.h>
+#include <stdlib.h>
 
 // Assinatura das funções
 void telaMain(void);
@@ -19,10 +20,12 @@ int main(void) {
     telaServicos();
     telaSobre();
     telaDev();
+    return 0;
 }
 
 // Funções
 void telaMain(void) {
+    system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
@@ -45,9 +48,12 @@ void telaMain(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
 }
 
 void telaSobre(void) {
+    system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
@@ -72,9 +78,12 @@ void telaSobre(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
 }
 
 void telaDev(void) {
+    system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
@@ -96,9 +105,12 @@ void telaDev(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
 }
 
 void telaPacientes(void) {
+    system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
@@ -121,9 +133,12 @@ void telaPacientes(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
 }
 
 void telaCalendario(void) {
+    system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
@@ -146,9 +161,12 @@ void telaCalendario(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
 }
 
 void telaServicos(void) {
+    system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
@@ -170,5 +188,7 @@ void telaServicos(void) {
     printf("||             0. Retornar ao Menu Principal                                 ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
-    printf("\n");   
+    printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();   
 }
