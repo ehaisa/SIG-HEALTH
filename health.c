@@ -9,12 +9,14 @@ void telaSobre(void);
 void telaDev(void);
 void telaPacientes(void);
 void telaCalendario(void);
+void telaServicos(void);
 
 // Programa Principal
 int main(void) {
     telaMain();
     telaPacientes();
     telaCalendario();
+    telaServicos();
     telaSobre();
     telaDev();
 }
@@ -144,4 +146,29 @@ void telaCalendario(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+}
+
+void telaServicos(void) {
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                   = = = = Serviços Prestados = = = =                      ||\n");
+    printf("||                                                                           ||\n");
+    printf("||             1. Novo Serviço                                               ||\n");
+    printf("||             2. Visualizar Serviços                                        ||\n");
+    printf("||             3. Editar Serviços                                            ||\n");
+    printf("||             4. Excluir Serviço                                            ||\n");
+    printf("||             0. Retornar ao Menu Principal                                 ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");   
 }
