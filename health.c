@@ -7,10 +7,12 @@
 void telaMain(void);
 void telaSobre(void);
 void telaDev(void);
+void telaPacientes(void);
 
 // Programa Principal
 int main(void) {
     telaMain();
+    telaPacientes();
     telaSobre();
     telaDev();
 }
@@ -87,6 +89,31 @@ void telaDev(void) {
     printf("||            E-mail: isalaura1304@gmail.com                                 ||\n");
     printf("||            Instagram: @ehaisau                                            ||\n");
     printf("||            Git: https://github.com/ehaisa/SIG-HEALTH.git                  ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+}
+
+void telaPacientes(void) {
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                      = = = = Meu Fichário = = = =                         ||\n");
+    printf("||                                                                           ||\n");
+    printf("||             1. Cadastrar Paciente                                         ||\n");
+    printf("||             2. Pesquisar Paciente                                         ||\n");
+    printf("||             3. Modificar Ficha                                            ||\n");
+    printf("||             4. Excluir Ficha                                              ||\n");
+    printf("||             0. Retornar ao Menu Principal                                 ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
