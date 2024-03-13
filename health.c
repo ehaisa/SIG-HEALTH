@@ -12,12 +12,14 @@ void telaPacientes(void);
 void telaCalendario(void);
 void telaServicos(void);
 void criarPaciente(void);
+void lerPaciente(void);
 
 // Programa Principal
 int main(void) {
     telaMain();
     telaPacientes();
     criarPaciente();
+    lerPaciente();
     telaCalendario();
     telaServicos();
     telaSobre();
@@ -81,6 +83,32 @@ void criarPaciente(void) {
     printf("|| ========================================================================= ||\n");
     printf("\n");
     printf("\t\t      Insira as informações do PACIENTE. \n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void lerPaciente(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                     = = = = Pesquisar Ficha = = = =                       ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("||          Informe o NOME COMPLETO do paciente que deseja pesquisar:        ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
     printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
     getchar();
 }
