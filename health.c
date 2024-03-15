@@ -14,6 +14,7 @@ void telaServicos(void);
 void criarPaciente(void);
 void lerPaciente(void);
 void editarPaciente(void);
+void deletarPaciente(void);
 
 // Programa Principal
 int main(void) {
@@ -22,6 +23,7 @@ int main(void) {
     criarPaciente();
     lerPaciente();
     editarPaciente();
+    deletarPaciente();
     telaCalendario();
     telaServicos();
     telaSobre();
@@ -140,6 +142,35 @@ void editarPaciente(void) {
     printf("\n");
     printf("\t      Informe a opção que deseja modificar ou adicionar. \n");
     printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void deletarPaciente(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                     = = = = Deletar Ficha = = = =                         ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("||          Informe o NOME COMPLETO do paciente que deseja EXCLUIR:          ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+    printf("\t          ATENÇÃO! Essa ação NÃO poderá ser desfeita. \n");
+    printf("\t\t      Tem certeza que deseja prosseguir? \n");
+    printf("\n");
+    printf("\t       Aperte a tecla <ENTER> para continuar a operação. !! \n");
     getchar();
 }
 
