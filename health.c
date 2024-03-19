@@ -177,10 +177,10 @@ void deletarPaciente(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("||                                                                           ||\n");
-    printf("||                     = = = = Deletar Ficha = = = =                         ||\n");
+    printf("||                      = = = = Deletar Ficha = = = =                        ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
-    printf("||          Informe o NOME COMPLETO do paciente que deseja EXCLUIR:          ||\n");
+    printf("||               Informe o CPF do paciente que deseja EXCLUIR:               ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
