@@ -20,6 +20,7 @@ void lerAgenda(void);
 void editarAgendamento(void);
 void deletarAgendamento(void);
 void criarServico(void);
+void lerServico(void);
 
 // Programa Principal
 int main(void) {
@@ -36,6 +37,7 @@ int main(void) {
     deletarAgendamento();
     telaServicos();
     criarServico();
+    lerServico();
     telaSobre();
     telaDev();
     return 0;
@@ -462,6 +464,32 @@ void criarServico(void) {
     printf("|| ========================================================================= ||\n");
     printf("\n");
     printf("\t\t      Insira as informações do SERVIÇO. \n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void lerServico(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                  = = = = Visualizar Serviços = = = =                      ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("||     Informe o ID do serviço que deseja pesquisar (SOMENTE NÚMEROS):       ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
     printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
     getchar();
 }
