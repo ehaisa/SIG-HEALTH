@@ -150,9 +150,10 @@ void editarPaciente(void) {
     printf("||                                                                           ||\n");
     printf("||                      = = = = Editar Ficha = = = =                         ||\n");
     printf("||                                                                           ||\n");
-    printf("||             1. Data de Nascimento                                         ||\n");
-    printf("||             2. Número de Contato                                          ||\n");
-    printf("||             3. Condições Médicas                                          ||\n");
+    printf("||             1. Nome                                                       ||\n");
+    printf("||             2. Data de Nascimento                                         ||\n");
+    printf("||             3. Número de Contato                                          ||\n");
+    printf("||             4. Condições Médicas                                          ||\n");
     printf("||             0. Sair                                                       ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
