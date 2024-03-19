@@ -16,6 +16,7 @@ void lerPaciente(void);
 void editarPaciente(void);
 void deletarPaciente(void);
 void criarAgendamento(void);
+void lerAgenda(void);
 
 // Programa Principal
 int main(void) {
@@ -27,6 +28,7 @@ int main(void) {
     deletarPaciente();
     telaCalendario();
     criarAgendamento();
+    lerAgenda();
     telaServicos();
     telaSobre();
     telaDev();
@@ -310,6 +312,32 @@ void criarAgendamento(void) {
     printf("||             Data (SOMENTE NÚMEROS):                                       ||\n");
     printf("||             Horário (SOMENTE NÚMEROS):                                    ||\n");
     printf("||             Serviço(s):                                                   ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void lerAgenda(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                   = = = = Visualizar Agenda = = = =                       ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("||           Informe a DATA que deseja pesquisar (SOMENTE NÚMEROS):          ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
