@@ -405,7 +405,7 @@ void deletarAgendamento(void) {
     printf("||                  = = = = Deletar Agendamento = = = =                      ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
-    printf("||     Informe o NOME COMPLETO do paciente agendado que deseja EXCLUIR:      ||\n");
+    printf("||           Informe o CPF do paciente agendado que deseja EXCLUIR:          ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
