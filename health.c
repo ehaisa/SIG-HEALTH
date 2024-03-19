@@ -94,6 +94,7 @@ void criarPaciente(void) {
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("||             Nome Completo:                                                ||\n");
+    printf("||             CPF:                                                          ||\n");
     printf("||             Data de Nascimento:                                           ||\n");
     printf("||             Sexo:                                                         ||\n");
     printf("||             Número de Contato:                                            ||\n");
