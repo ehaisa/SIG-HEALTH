@@ -15,6 +15,7 @@ void criarPaciente(void);
 void lerPaciente(void);
 void editarPaciente(void);
 void deletarPaciente(void);
+void criarAgendamento(void);
 
 // Programa Principal
 int main(void) {
@@ -25,6 +26,7 @@ int main(void) {
     editarPaciente();
     deletarPaciente();
     telaCalendario();
+    criarAgendamento();
     telaServicos();
     telaSobre();
     telaDev();
@@ -280,6 +282,35 @@ void telaCalendario(void) {
     printf("||             3. Editar Agendamentos                                        ||\n");
     printf("||             4. Excluir Horários                                           ||\n");
     printf("||             0. Retornar ao Menu Principal                                 ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void criarAgendamento(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                    = = = = Novo Agendamento = = = =                       ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("||             Nome Completo:                                                ||\n");
+    printf("||             Data (SOMENTE NÚMEROS):                                       ||\n");
+    printf("||             Horário (SOMENTE NÚMEROS):                                    ||\n");
+    printf("||             Serviço(s):                                                   ||\n");
+    printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
