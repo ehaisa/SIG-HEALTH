@@ -322,7 +322,7 @@ void criarAgendamento(void) {
     printf("||                    = = = = Novo Agendamento = = = =                       ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
-    printf("||             Nome Completo:                                                ||\n");
+    printf("||             CPF (SOMENTE NÚMEROS):                                        ||\n");
     printf("||             Data (SOMENTE NÚMEROS):                                       ||\n");
     printf("||             Horário (SOMENTE NÚMEROS):                                    ||\n");
     printf("||             Serviço(s):                                                   ||\n");
