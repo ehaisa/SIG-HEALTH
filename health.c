@@ -22,6 +22,7 @@ void deletarAgendamento(void);
 void criarServico(void);
 void lerServico(void);
 void editarServico(void);
+void deletarServico(void);
 
 // Programa Principal
 int main(void) {
@@ -40,6 +41,7 @@ int main(void) {
     criarServico();
     lerServico();
     editarServico();
+    deletarServico();
     telaSobre();
     telaDev();
     return 0;
@@ -521,5 +523,34 @@ void editarServico(void) {
     printf("\n");
     printf("\t      Informe a opção que deseja modificar ou adicionar. \n");
     printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void deletarServico(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                    = = = = Deletar Serviços = = = =                       ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("||     Informe o ID do serviço que deseja EXCLUIR (SOMENTE NÚMEROS):         ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+    printf("\t          ATENÇÃO! Essa ação NÃO poderá ser desfeita. \n");
+    printf("\t\t      Tem certeza que deseja prosseguir? \n");
+    printf("\n");
+    printf("\t       Aperte a tecla <ENTER> para continuar a operação. !! \n");
     getchar();
 }
