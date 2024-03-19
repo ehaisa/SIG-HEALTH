@@ -125,7 +125,7 @@ void lerPaciente(void) {
     printf("||                     = = = = Pesquisar Ficha = = = =                       ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
-    printf("||          Informe o NOME COMPLETO do paciente que deseja pesquisar:        ||\n");
+    printf("||               Informe o CPF do paciente que deseja pesquisar:             ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
