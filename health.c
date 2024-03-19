@@ -17,6 +17,7 @@ void editarPaciente(void);
 void deletarPaciente(void);
 void criarAgendamento(void);
 void lerAgenda(void);
+void editarAgendamento(void);
 
 // Programa Principal
 int main(void) {
@@ -29,6 +30,7 @@ int main(void) {
     telaCalendario();
     criarAgendamento();
     lerAgenda();
+    editarAgendamento();
     telaServicos();
     telaSobre();
     telaDev();
@@ -342,6 +344,34 @@ void lerAgenda(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
+    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    getchar();
+}
+
+void editarAgendamento(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               =             Clínica em Casa             =                 ||\n");
+    printf("||               =                                         =                 ||\n");
+    printf("||               ===========================================                 ||\n");
+    printf("||              Desenvolvido por @ehaisa -- desde Março, 2024                ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("||                                                                           ||\n");
+    printf("||                   = = = = Editar Agendamento = = = =                      ||\n");
+    printf("||                                                                           ||\n");
+    printf("||             1. Data                                                       ||\n");
+    printf("||             2. Horário                                                    ||\n");
+    printf("||             3. Serviço                                                    ||\n");
+    printf("||             0. Sair                                                       ||\n");
+    printf("||                                                                           ||\n");
+    printf("|| ========================================================================= ||\n");
+    printf("\n");
+    printf("\t      Informe a opção que deseja modificar ou adicionar. \n");
     printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
     getchar();
 }
