@@ -23,6 +23,7 @@ void logic_telamain(char opcao)
     case '4':
         system("cls||clear");
         printf("\t    Opção em desenvolvimento. Tente novamente quando finalizado. !! \n");
+        getchar();
         break;
     case '5':
         logic_menuinfos();
