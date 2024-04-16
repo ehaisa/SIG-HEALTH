@@ -12,3 +12,21 @@ Desenvolvido por @ehaisa -- desde Março, 2024
 
 ### Objetivo
 Esse programa é voltado para fins acadêmicos com objetivo de auxiliar o aprendizado e a prática dos conteúdos vistos em aula, assim como ter um papel avaliativo. Este sistema foi desenvolvido com foco nos profissionais de saúde que prestam serviços domiciliares, proporcionando-lhes uma ferramenta automatizada para aprimorar a gestão de pacientes e ganhos financeiros, obtendo melhor controle de agendamentos e recursos.
+
+# Como compilar
+
+É necessário ter o make e o gcc instalados.
+
+### Windows
+
+mingw32-make<br>
+mingw32-make cleanwindows
+
+### Linux
+
+make<br>
+make cleanunix
+
+### Para executar o projeto
+
+./main
