@@ -3,6 +3,9 @@
 #include "telasagendamento.h"
 
 void criarAgendamento(void) {
+
+    Agendamento agendamento;
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -18,20 +21,26 @@ void criarAgendamento(void) {
     printf("||                                                                           ||\n");
     printf("||                    = = = = Novo Agendamento = = = =                       ||\n");
     printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
-    printf("||             CPF (SOMENTE NÚMEROS):                                        ||\n");
-    printf("||             Data (SOMENTE NÚMEROS):                                       ||\n");
-    printf("||             Horário (SOMENTE NÚMEROS):                                    ||\n");
-    printf("||             Serviço(s):                                                   ||\n");
-    printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    read_cpf(agendamento.cpf_cadastrado);
+    read_data(agendamento.data_agendada);
+
+    printf("\t Digite o horário de preferência (hh:mm): \n");
+    scanf("%5[^\n]", agendamento.horario);
     getchar();
+
+    printf("\t Quais serviços serão prestados? \n");
+    scanf("%98[^\n]", agendamento.servico_agendado);
+    getchar();
+
+    salvar_arq_agendamento(agendamento);
 }
 
 void lerAgenda(void) {
+    
+    char cpf_cadastrado[12];
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -47,17 +56,16 @@ void lerAgenda(void) {
     printf("||                                                                           ||\n");
     printf("||                   = = = = Visualizar Agenda = = = =                       ||\n");
     printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
-    printf("||           Informe a DATA que deseja pesquisar (SOMENTE NÚMEROS):          ||\n");
-    printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
-    getchar();
+    read_cpf(cpf_cadastrado);
+    pesquisar_arq_agendamento(cpf_cadastrado);
 }
 
 void editarAgendamento(void) {
+
+    char cpf_cadastrado[12];
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -73,19 +81,17 @@ void editarAgendamento(void) {
     printf("||                                                                           ||\n");
     printf("||                   = = = = Editar Agendamento = = = =                      ||\n");
     printf("||                                                                           ||\n");
-    printf("||             1. Data                                                       ||\n");
-    printf("||             2. Horário                                                    ||\n");
-    printf("||             3. Serviço                                                    ||\n");
-    printf("||             0. Sair                                                       ||\n");
-    printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t      Informe a opção que deseja modificar ou adicionar. \n");
-    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
-    getchar();
+    read_cpf(cpf_cadastrado);
+    editar_arq_agendamento(cpf_cadastrado);
+
 }
 
 void deletarAgendamento(void) {
+
+    char cpf_cadastrado[12];
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -101,15 +107,8 @@ void deletarAgendamento(void) {
     printf("||                                                                           ||\n");
     printf("||                  = = = = Deletar Agendamento = = = =                      ||\n");
     printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
-    printf("||           Informe o CPF do paciente agendado que deseja EXCLUIR:          ||\n");
-    printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t          ATENÇÃO! Essa ação NÃO poderá ser desfeita. \n");
-    printf("\t\t      Tem certeza que deseja prosseguir? \n");
-    printf("\n");
-    printf("\t       Aperte a tecla <ENTER> para continuar a operação. !! \n");
-    getchar();
+    read_cpf(cpf_cadastrado);
+    deletar_arq_agendamento(cpf_cadastrado);
 }

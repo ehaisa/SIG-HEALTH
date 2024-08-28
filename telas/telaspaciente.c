@@ -3,6 +3,8 @@
 #include "telaspaciente.h"
 
 void criarPaciente(void) {
+    Paciente pessoa;
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -19,22 +21,43 @@ void criarPaciente(void) {
     printf("||                    = = = = Criar Nova Ficha = = = =                       ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
-    printf("||             Nome Completo:                                                ||\n");
-    printf("||             CPF:                                                          ||\n");
-    printf("||             Data de Nascimento:                                           ||\n");
-    printf("||             Sexo:                                                         ||\n");
-    printf("||             Número de Contato:                                            ||\n");
-    printf("||             Condições Médicas:                                            ||\n");
+    printf("||           - Nome Completo                                                 ||\n");
+    printf("||           - CPF                                                           ||\n");
+    printf("||           - Data de Nascimento                                            ||\n");
+    printf("||           - Sexo                                                          ||\n");
+    printf("||           - Número de Contato                                             ||\n");
+    printf("||           - Condições Médicas                                             ||\n");
     printf("||                                                                           ||\n");
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t\t      Insira as informações do PACIENTE. \n");
-    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
+    printf("\t\t      Digite o NOME do PACIENTE. \n");
+    scanf("%99[^\n]", pessoa.nome);
     getchar();
+
+    read_cpf(pessoa.cpf);
+    getchar();
+
+    read_data(pessoa.data);
+    getchar();
+    
+    printf("\t\t      Digite o SEXO do PACIENTE (F/M). \n");
+    scanf("%1s", pessoa.sexo);
+    getchar();
+    printf("\t\t      Digite o NÚMERO DE CONTATO do PACIENTE. \n");
+    scanf("%19[^\n]", pessoa.contato);
+    getchar();
+    printf("\t\t      Digite CONDIÇÕES MÉDICAS do PACIENTE. \n");
+    scanf("%98[^\n]", pessoa.condicoes);
+    getchar();
+
+    salvar_arq_paciente(pessoa);
 }
 
 void lerPaciente(void) {
+
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -50,17 +73,17 @@ void lerPaciente(void) {
     printf("||                                                                           ||\n");
     printf("||                     = = = = Pesquisar Ficha = = = =                       ||\n");
     printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
-    printf("||               Informe o CPF do paciente que deseja pesquisar:             ||\n");
-    printf("||                                                                           ||\n");
-    printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
-    getchar();
+    read_cpf(cpf);
+    pesquisar_arq_paciente(cpf);
+
 }
 
 void editarPaciente(void) {
+
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -76,20 +99,16 @@ void editarPaciente(void) {
     printf("||                                                                           ||\n");
     printf("||                      = = = = Editar Ficha = = = =                         ||\n");
     printf("||                                                                           ||\n");
-    printf("||             1. Nome                                                       ||\n");
-    printf("||             2. Data de Nascimento                                         ||\n");
-    printf("||             3. Número de Contato                                          ||\n");
-    printf("||             4. Condições Médicas                                          ||\n");
-    printf("||             0. Sair                                                       ||\n");
-    printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t      Informe a opção que deseja modificar ou adicionar. \n");
-    printf("\t      Aperte a tecla <ENTER> para continuar a operação. !! \n");
-    getchar();
+    read_cpf(cpf);
+    editar_arq_paciente(cpf);
 }
 
 void deletarPaciente(void) {
+    
+    char cpf[12];
+    
     system("clear||cls");
     printf("\n");
     printf("|| ========================================================================= ||\n");
@@ -111,9 +130,6 @@ void deletarPaciente(void) {
     printf("||                                                                           ||\n");
     printf("|| ========================================================================= ||\n");
     printf("\n");
-    printf("\t          ATENÇÃO! Essa ação NÃO poderá ser desfeita. \n");
-    printf("\t\t      Tem certeza que deseja prosseguir? \n");
-    printf("\n");
-    printf("\t       Aperte a tecla <ENTER> para continuar a operação. !! \n");
-    getchar();
+    read_cpf(cpf);
+    deletar_arq_paciente(cpf);
 }

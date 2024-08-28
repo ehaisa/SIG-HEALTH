@@ -10,7 +10,7 @@ CFLAGS = -Wall -Wextra
 # Diretórios dos arquivos fonte
 LOGIC_DIR = logica
 SCREENS_DIR = telas
-# FUNCTION_DIR = function
+FUNCTION_DIR = dados
 
 # Arquivos fonte de lógica
 LOGIC_SRCS := $(wildcard $(LOGIC_DIR)/*.c)
@@ -19,14 +19,13 @@ LOGIC_SRCS := $(wildcard $(LOGIC_DIR)/*.c)
 SCREENS_SRCS := $(wildcard $(SCREENS_DIR)/*.c)
 
 # Arquivos fonte de funções
-# FUNCTION_SRCS := $(wildcard $(FUNCTION_DIR)/*.c)
+FUNCTION_SRCS := $(wildcard $(FUNCTION_DIR)/*.c)
 
 # Arquivo fonte contendo a função main
 MAIN_SRC = health.c
 
 # Todos os arquivos fonte
-# SRCS = $(MAIN_SRC) $(LOGIC_SRCS) $(SCREENS_SRCS) $(FUNCTION_SRCS)
-SRCS = $(MAIN_SRC) $(LOGIC_SRCS) $(SCREENS_SRCS) 
+SRCS = $(MAIN_SRC) $(LOGIC_SRCS) $(SCREENS_SRCS) $(FUNCTION_SRCS)
 
 
 # Objetos gerados
